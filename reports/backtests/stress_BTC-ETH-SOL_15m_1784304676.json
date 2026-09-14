@@ -1,0 +1,502 @@
+{
+  "reports": [
+    {
+      "symbol": "BTCUSDT",
+      "interval": "15m",
+      "leverage": 50,
+      "candles": 5000,
+      "rule": "breakout_retest",
+      "note": "OOS = stitched test slices only. Train->test decay is the overfit tell.",
+      "folds": [
+        {
+          "fold": 1,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        },
+        {
+          "fold": 2,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        },
+        {
+          "fold": 3,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        },
+        {
+          "fold": 4,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        },
+        {
+          "fold": 5,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        }
+      ],
+      "walk_forward_out_of_sample": {
+        "trades": 0,
+        "win_rate": null,
+        "total_roe": 0.0,
+        "avg_roe": null,
+        "liquidations": 0,
+        "profit_factor": null
+      },
+      "overfit_check": {
+        "avg_train_win_rate": null,
+        "avg_test_win_rate": null,
+        "decay": null
+      },
+      "baseline_random": {
+        "trades": 129,
+        "win_rate": 0.4109,
+        "total_roe": -7.1781,
+        "avg_roe": -0.05564,
+        "liquidations": 1,
+        "liq_rate": 0.0078,
+        "profit_factor": 0.631
+      },
+      "baseline_buy_hold": {
+        "price_return": -0.16261,
+        "roe": -8.1307
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "interval": "15m",
+      "leverage": 50,
+      "candles": 5000,
+      "rule": "breakout_retest",
+      "note": "OOS = stitched test slices only. Train->test decay is the overfit tell.",
+      "folds": [
+        {
+          "fold": 1,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        },
+        {
+          "fold": 2,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        },
+        {
+          "fold": 3,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        },
+        {
+          "fold": 4,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        },
+        {
+          "fold": 5,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        }
+      ],
+      "walk_forward_out_of_sample": {
+        "trades": 0,
+        "win_rate": null,
+        "total_roe": 0.0,
+        "avg_roe": null,
+        "liquidations": 0,
+        "profit_factor": null
+      },
+      "overfit_check": {
+        "avg_train_win_rate": null,
+        "avg_test_win_rate": null,
+        "decay": null
+      },
+      "baseline_random": {
+        "trades": 126,
+        "win_rate": 0.4921,
+        "total_roe": -1.1957,
+        "avg_roe": -0.00949,
+        "liquidations": 3,
+        "liq_rate": 0.0238,
+        "profit_factor": 0.946
+      },
+      "baseline_buy_hold": {
+        "price_return": -0.11916,
+        "roe": -5.958
+      }
+    },
+    {
+      "symbol": "SOLUSDT",
+      "interval": "15m",
+      "leverage": 50,
+      "candles": 5000,
+      "rule": "breakout_retest",
+      "note": "OOS = stitched test slices only. Train->test decay is the overfit tell.",
+      "folds": [
+        {
+          "fold": 1,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        },
+        {
+          "fold": 2,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        },
+        {
+          "fold": 3,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        },
+        {
+          "fold": 4,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        },
+        {
+          "fold": 5,
+          "chosen_params": {
+            "sl_atr": 1.0,
+            "tp_atr": 1.5,
+            "max_hold": 16,
+            "brk_atr": 0.1,
+            "vol_min": 1.2
+          },
+          "train": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          },
+          "test": {
+            "trades": 0,
+            "win_rate": null,
+            "total_roe": 0.0,
+            "avg_roe": null,
+            "liquidations": 0,
+            "profit_factor": null
+          }
+        }
+      ],
+      "walk_forward_out_of_sample": {
+        "trades": 0,
+        "win_rate": null,
+        "total_roe": 0.0,
+        "avg_roe": null,
+        "liquidations": 0,
+        "profit_factor": null
+      },
+      "overfit_check": {
+        "avg_train_win_rate": null,
+        "avg_test_win_rate": null,
+        "decay": null
+      },
+      "baseline_random": {
+        "trades": 139,
+        "win_rate": 0.4173,
+        "total_roe": -7.1447,
+        "avg_roe": -0.0514,
+        "liquidations": 1,
+        "liq_rate": 0.0072,
+        "profit_factor": 0.763
+      },
+      "baseline_buy_hold": {
+        "price_return": -0.10834,
+        "roe": -5.417
+      }
+    }
+  ]
+}

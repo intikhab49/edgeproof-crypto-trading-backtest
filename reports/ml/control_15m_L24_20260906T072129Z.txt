@@ -1,0 +1,50 @@
+BiLSTM/LSTM under the same harness as ml_pipeline.py
+seq_len 24 | purge widened by seq_len on the left | scaler fit on train folds only
+
+==============================================================================
+BTCUSDT @ 15m   seq_len=24
+==============================================================================
+  cache: 9859 candles on disk
+  +2 newer bars
+  cache saved: 9861 candles total
+  CONTROL MODE: leaked label feature injected
+  samples: 4869  windows (4869, 24, 28)  labels: {-1: 1638, 0: 1415, 1: 1816}  mean uniqueness: 0.180
+
+  BiLSTM  (4 folds, 20s)
+      thr  trades      PF    win%    total%   Sharpe
+     0.30     817    2.75   70.7%    85.96%    0.401
+     0.35     803    3.04   72.6%    90.51%    0.441
+     0.40     790    3.09   72.3%    90.37%    0.449
+     0.45     771    3.14   73.0%    88.39%    0.454
+     0.50     763    3.29   73.9%    92.21%    0.471
+     0.55     748    4.02   75.7%   100.14%    0.540
+     0.60     734    4.60   77.2%   102.72%    0.594
+     0.65     718    4.73   78.4%   101.53%    0.607
+     0.70     689    4.74   79.0%    97.52%    0.615
+    BEST thr=0.70  trades 689  PF 4.740 (random 0.546)  total +97.52%
+    per-trade Sharpe +0.615   DEFLATED SHARPE 1.000
+    VERDICT: POSSIBLE EDGE NEEDS FORWARD TEST
+
+  LSTM  (4 folds, 9s)
+      thr  trades      PF    win%    total%   Sharpe
+     0.30     807    2.74   71.1%    85.03%    0.402
+     0.35     794    3.08   73.2%    92.01%    0.439
+     0.40     783    3.20   73.7%    92.81%    0.454
+     0.45     763    3.59   75.4%    95.25%    0.501
+     0.50     736    4.13   76.8%    98.45%    0.554
+     0.55     720    4.42   77.4%    99.68%    0.577
+     0.60     697    4.41   77.5%    95.78%    0.572
+     0.65     683    5.02   79.5%    97.76%    0.614
+     0.70     663    5.89   80.5%    98.97%    0.679
+    BEST thr=0.70  trades 663  PF 5.891 (random 0.546)  total +98.97%
+    per-trade Sharpe +0.679   DEFLATED SHARPE 1.000
+    VERDICT: POSSIBLE EDGE NEEDS FORWARD TEST
+
+==============================================================================
+SUMMARY  (POSITIVE CONTROL)
+==============================================================================
+  symbol     model     trades      PF     DSR  verdict
+  BTCUSDT    BiLSTM       689    4.74   1.000  possible_edge_needs_forward_test
+  BTCUSDT    LSTM         663    5.89   1.000  possible_edge_needs_forward_test
+
+  CONTROL PASSED - the sequence harness does detect a planted edge.

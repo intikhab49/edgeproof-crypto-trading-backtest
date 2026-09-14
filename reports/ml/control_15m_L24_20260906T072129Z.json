@@ -1,0 +1,62 @@
+{
+  "generated_utc": "20260906T072129Z",
+  "args": {
+    "symbols": [
+      "BTCUSDT"
+    ],
+    "interval": "15m",
+    "candles": 5000,
+    "seq_len": 24,
+    "pt": 1.5,
+    "sl": 1.5,
+    "vert": 8,
+    "ambiguous": "drop",
+    "folds": 4,
+    "embargo": 0.01,
+    "hidden": 48,
+    "layers": 1,
+    "dropout": 0.3,
+    "epochs": 15,
+    "batch": 128,
+    "lr": 0.001,
+    "fee": 0.0004,
+    "seed": 7,
+    "micro": false,
+    "control": true,
+    "only": null
+  },
+  "reports": [
+    {
+      "symbol": "BTCUSDT",
+      "interval": "15m",
+      "seq_len": 24,
+      "micro": false,
+      "control": true,
+      "n_samples": 4869,
+      "results": {
+        "BiLSTM": {
+          "verdict": "possible_edge_needs_forward_test",
+          "threshold": 0.7,
+          "trades": 689,
+          "profit_factor": 4.740426084699902,
+          "total_return": 0.9751870996437157,
+          "sharpe": 0.6153162723663536,
+          "deflated_sharpe": 1.0,
+          "random_pf": 0.5461553633380372,
+          "folds": 4
+        },
+        "LSTM": {
+          "verdict": "possible_edge_needs_forward_test",
+          "threshold": 0.7,
+          "trades": 663,
+          "profit_factor": 5.890568730967646,
+          "total_return": 0.9897499943538989,
+          "sharpe": 0.6790513639174218,
+          "deflated_sharpe": 1.0,
+          "random_pf": 0.5462255411081658,
+          "folds": 4
+        }
+      }
+    }
+  ]
+}

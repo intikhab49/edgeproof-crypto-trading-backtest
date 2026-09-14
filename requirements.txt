@@ -1,0 +1,5 @@
+numpy
+lightgbm
+scikit-learn
+# optional, only for research/ml_seq.py (CPU build):
+# torch --index-url https://download.pytorch.org/whl/cpu

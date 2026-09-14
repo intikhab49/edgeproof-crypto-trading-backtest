@@ -1,0 +1,136 @@
+BiLSTM/LSTM under the same harness as ml_pipeline.py
+seq_len 24 | purge widened by seq_len on the left | scaler fit on train folds only
+
+==============================================================================
+BTCUSDT @ 15m   seq_len=24
+==============================================================================
+  cache: 9861 candles on disk
+  cache saved: 9861 candles total
+  micro: 53 days needed, 53 already cached
+  micro: 14976 5m buckets in 0.1s
+  micro features: 11 cols, coverage 99.4%
+  samples: 4799  windows (4799, 24, 38)  labels: {-1: 1621, 0: 1391, 1: 1787}  mean uniqueness: 0.180
+
+  BiLSTM  (5 folds, 40s)
+      thr  trades      PF    win%    total%   Sharpe
+     0.30     778    0.48   40.5%   -74.12%   -0.302
+     0.35     756    0.50   40.9%   -67.75%   -0.288
+     0.40     746    0.49   41.0%   -68.64%   -0.298
+     0.45     731    0.47   40.4%   -69.45%   -0.310
+     0.50     711    0.48   40.9%   -65.48%   -0.307
+     0.55     683    0.47   40.6%   -65.01%   -0.316
+     0.60     660    0.49   42.0%   -59.02%   -0.295
+     0.65     640    0.53   42.7%   -51.52%   -0.262
+     0.70     616    0.54   42.5%   -47.63%   -0.256
+    BEST thr=0.70  trades 616  PF 0.540 (random 0.545)  total -47.63%
+    per-trade Sharpe -0.256   DEFLATED SHARPE 0.000
+    VERDICT: NO EDGE
+
+  LSTM  (5 folds, 23s)
+      thr  trades      PF    win%    total%   Sharpe
+     0.30     778    0.53   41.4%   -63.90%   -0.256
+     0.35     758    0.54   41.0%   -60.84%   -0.253
+     0.40     739    0.53   41.1%   -59.78%   -0.257
+     0.45     713    0.51   40.5%   -59.93%   -0.277
+     0.50     692    0.50   41.6%   -60.05%   -0.286
+     0.55     656    0.52   41.6%   -53.12%   -0.272
+     0.60     646    0.50   41.8%   -54.37%   -0.285
+     0.65     614    0.50   41.0%   -51.95%   -0.286
+     0.70     572    0.47   39.3%   -53.24%   -0.317
+    BEST thr=0.35  trades 758  PF 0.539 (random 0.544)  total -60.84%
+    per-trade Sharpe -0.253   DEFLATED SHARPE 0.000
+    VERDICT: NO EDGE
+
+==============================================================================
+ETHUSDT @ 15m   seq_len=24
+==============================================================================
+  cache: 9861 candles on disk
+  cache saved: 9861 candles total
+  micro: 53 days needed, 53 already cached
+  micro: 14976 5m buckets in 0.1s
+  micro features: 11 cols, coverage 99.4%
+  samples: 4799  windows (4799, 24, 38)  labels: {-1: 1489, 0: 1573, 1: 1737}  mean uniqueness: 0.174
+
+  BiLSTM  (5 folds, 41s)
+      thr  trades      PF    win%    total%   Sharpe
+     0.30     742    0.65   44.9%   -56.67%   -0.175
+     0.35     729    0.65   45.1%   -54.88%   -0.173
+     0.40     713    0.66   45.3%   -52.14%   -0.168
+     0.45     695    0.67   44.9%   -48.66%   -0.161
+     0.50     682    0.68   45.7%   -47.19%   -0.159
+     0.55     664    0.70   46.2%   -43.05%   -0.148
+     0.60     638    0.64   44.4%   -51.41%   -0.185
+     0.65     610    0.65   44.6%   -46.58%   -0.175
+     0.70     590    0.66   44.6%   -43.21%   -0.170
+    BEST thr=0.55  trades 664  PF 0.695 (random 0.628)  total -43.05%
+    per-trade Sharpe -0.148   DEFLATED SHARPE 0.000
+    VERDICT: NO EDGE
+
+  LSTM  (5 folds, 23s)
+      thr  trades      PF    win%    total%   Sharpe
+     0.30     718    0.74   48.2%   -37.24%   -0.120
+     0.35     710    0.73   48.9%   -39.20%   -0.127
+     0.40     687    0.71   47.3%   -41.04%   -0.139
+     0.45     674    0.71   47.5%   -39.76%   -0.136
+     0.50     645    0.71   47.4%   -38.20%   -0.140
+     0.55     624    0.72   47.4%   -35.81%   -0.135
+     0.60     595    0.67   47.2%   -40.58%   -0.164
+     0.65     562    0.69   47.9%   -34.17%   -0.150
+     0.70     541    0.79   49.9%   -21.09%   -0.097
+    BEST thr=0.70  trades 541  PF 0.788 (random 0.626)  total -21.09%
+    per-trade Sharpe -0.097   DEFLATED SHARPE 0.002
+    VERDICT: NO EDGE
+
+==============================================================================
+SOLUSDT @ 15m   seq_len=24
+==============================================================================
+  cache: 9861 candles on disk
+  cache saved: 9861 candles total
+  micro: 53 days needed, 53 already cached
+  micro: 14976 5m buckets in 0.1s
+  micro features: 11 cols, coverage 99.4%
+  samples: 4790  windows (4790, 24, 38)  labels: {-1: 1610, 0: 1420, 1: 1760}  mean uniqueness: 0.175
+
+  BiLSTM  (5 folds, 41s)
+      thr  trades      PF    win%    total%   Sharpe
+     0.30     748    0.75   48.0%   -47.24%   -0.120
+     0.35     731    0.71   46.8%   -54.47%   -0.143
+     0.40     727    0.73   47.7%   -48.53%   -0.129
+     0.45     712    0.71   46.9%   -52.34%   -0.141
+     0.50     703    0.71   46.8%   -50.85%   -0.141
+     0.55     683    0.72   47.6%   -48.22%   -0.140
+     0.60     668    0.73   48.1%   -44.93%   -0.135
+     0.65     652    0.76   48.8%   -38.17%   -0.117
+     0.70     623    0.79   49.3%   -31.00%   -0.100
+    BEST thr=0.70  trades 623  PF 0.787 (random 0.688)  total -31.00%
+    per-trade Sharpe -0.100   DEFLATED SHARPE 0.001
+    VERDICT: NO EDGE
+
+  LSTM  (5 folds, 23s)
+      thr  trades      PF    win%    total%   Sharpe
+     0.30     749    0.72   47.7%   -54.59%   -0.139
+     0.35     724    0.68   46.8%   -59.94%   -0.160
+     0.40     707    0.69   46.4%   -55.51%   -0.151
+     0.45     696    0.70   46.8%   -52.26%   -0.145
+     0.50     679    0.73   46.7%   -45.75%   -0.130
+     0.55     656    0.69   46.0%   -51.91%   -0.156
+     0.60     643    0.63   44.9%   -61.22%   -0.191
+     0.65     615    0.63   46.0%   -58.31%   -0.196
+     0.70     599    0.58   44.7%   -66.24%   -0.227
+    BEST thr=0.50  trades 679  PF 0.730 (random 0.691)  total -45.75%
+    per-trade Sharpe -0.130   DEFLATED SHARPE 0.000
+    VERDICT: NO EDGE
+
+==============================================================================
+SUMMARY
+==============================================================================
+  symbol     model     trades      PF     DSR  verdict
+  BTCUSDT    BiLSTM       616    0.54   0.000  no_edge
+  BTCUSDT    LSTM         758    0.54   0.000  no_edge
+  ETHUSDT    BiLSTM       664    0.70   0.000  no_edge
+  ETHUSDT    LSTM         541    0.79   0.002  no_edge
+  SOLUSDT    BiLSTM       623    0.79   0.001  no_edge
+  SOLUSDT    LSTM         679    0.73   0.000  no_edge
+
+  NO EDGE from either recurrent model. Matches LightGBM's null.
+  The constraint is signal-to-noise and fees, not model capacity.

@@ -1,0 +1,188 @@
+Quantile range forecast - calibration + skill vs rolling-vol baseline
+horizon 4 x 15m   micro=True
+
+==============================================================================
+BTCUSDT @ 15m   horizon 4 bars
+==============================================================================
+  cache: 9858 candles on disk
+  +1 newer bars
+  cache saved: 9859 candles total
+  micro: 53 days needed, 53 already cached
+  micro: 14976 5m buckets in 0.1s
+  micro features: 11 cols, coverage 99.4%
+  samples: 4874   embargo: 48 bars
+
+    forward return  (n=4874)
+           q   coverage    pinball  vs uncond    vs vol median fc
+        0.01       2.8%   0.000151      -6.8%    -11.8%   -0.597%
+        0.05       8.3%   0.000387      +5.3%     +0.3%   -0.369%
+        0.10      13.0%   0.000593      +3.0%     +0.5%   -0.267%
+        0.25      26.7%   0.000941      +1.8%     +1.1%   -0.132%
+        0.50      49.9%   0.001164      -0.9%     -0.8%   +0.010%
+        0.75      73.1%   0.000981      +3.4%     +1.6%   +0.150%
+        0.90      86.7%   0.000617      +9.4%     +5.2%   +0.285%
+        0.95      91.5%   0.000414     +10.4%     +6.0%   +0.372%
+        0.99      96.8%   0.000171      +2.3%     -7.0%   +0.553%
+      mean |coverage error| 0.023   skill vs uncond +3.1%   skill vs rolling-vol -0.6%
+
+    down excursion (long risk)  (n=4874)
+           q   coverage    pinball  vs uncond    vs vol median fc
+        0.01       3.2%   0.000171      -4.3%    -13.7%   -0.758%
+        0.05       9.0%   0.000393     +12.4%     -0.6%   -0.509%
+        0.10      13.4%   0.000545     +14.2%     +3.5%   -0.411%
+        0.25      26.4%   0.000767     +12.6%     +3.4%   -0.280%
+        0.50      48.3%   0.000766      +8.5%     +1.1%   -0.166%
+        0.75      69.4%   0.000497      +3.5%     -0.8%   -0.086%
+        0.90      85.3%   0.000224      +1.0%     -0.8%   -0.033%
+        0.95      91.4%   0.000115      -0.3%     -0.3%   -0.014%
+        0.99      97.0%   0.000023      -1.0%     -1.0%   -0.000%
+      mean |coverage error| 0.032   skill vs uncond +5.2%   skill vs rolling-vol -1.0%
+      top features: atr_pct(104), m_oi_chg24(91), vol_expansion(84), hour_cos(80), m_tt_pos_ls(79), ret48_z(69), m_global_ls(66), cvd_slope6(64)
+
+      liquidation check over 4 bars (4 x 15m):
+        45x (liq 2.22%): breached 0.23% of bars | warned p05 0.00% p01 0.00% | caught 0% / 0% of breaches
+        50x (liq 2.00%): breached 0.27% of bars | warned p05 0.00% p01 0.18% | caught 0% / 0% of breaches
+        60x (liq 1.67%): breached 0.57% of bars | warned p05 0.00% p01 1.17% | caught 0% / 0% of breaches
+
+    up excursion (short risk)  (n=4874)
+           q   coverage    pinball  vs uncond    vs vol median fc
+        0.01       3.0%   0.000025      -1.5%     -1.5%   +0.000%
+        0.05       8.5%   0.000124      -0.9%     -1.0%   +0.015%
+        0.10      14.4%   0.000239      +0.5%     -1.0%   +0.035%
+        0.25      29.4%   0.000527      +3.7%     +0.6%   +0.084%
+        0.50      53.9%   0.000825      +8.0%     +2.5%   +0.170%
+        0.75      74.9%   0.000834     +12.7%     +6.8%   +0.293%
+        0.90      87.5%   0.000591     +15.6%    +10.4%   +0.438%
+        0.95      92.0%   0.000423     +15.4%    +10.2%   +0.533%
+        0.99      96.8%   0.000182     +10.8%     -2.1%   +0.737%
+      mean |coverage error| 0.029   skill vs uncond +7.1%   skill vs rolling-vol +2.8%
+
+==============================================================================
+ETHUSDT @ 15m   horizon 4 bars
+==============================================================================
+  cache: 9000 candles on disk
+  +859 newer bars
+  cache saved: 9859 candles total
+  micro: 53 days needed, 51 already cached
+  micro: 14976 5m buckets in 4.6s
+  micro features: 11 cols, coverage 99.4%
+  samples: 4874   embargo: 48 bars
+
+    forward return  (n=4874)
+           q   coverage    pinball  vs uncond    vs vol median fc
+        0.01       2.5%   0.000215      -8.7%    -12.1%   -0.776%
+        0.05       7.9%   0.000535      +3.4%     +1.0%   -0.488%
+        0.10      11.9%   0.000775      +4.8%     +2.4%   -0.364%
+        0.25      27.4%   0.001237      +1.7%     +0.4%   -0.167%
+        0.50      51.2%   0.001527      -1.6%     -1.6%   +0.014%
+        0.75      73.3%   0.001322      +0.3%     -0.2%   +0.193%
+        0.90      86.7%   0.000869      +2.2%     +1.6%   +0.393%
+        0.95      91.5%   0.000610      +0.7%     -0.7%   +0.515%
+        0.99      97.2%   0.000256      -0.7%     -9.7%   +0.785%
+      mean |coverage error| 0.023   skill vs uncond +0.2%   skill vs rolling-vol -2.1%
+
+    down excursion (long risk)  (n=4874)
+           q   coverage    pinball  vs uncond    vs vol median fc
+        0.01       2.6%   0.000250      -4.9%    -10.0%   -1.084%
+        0.05       7.7%   0.000556     +10.8%     +3.9%   -0.738%
+        0.10      12.1%   0.000752     +14.6%     +7.2%   -0.597%
+        0.25      25.8%   0.001037     +13.9%     +5.8%   -0.383%
+        0.50      49.3%   0.001035      +8.7%     +2.8%   -0.223%
+        0.75      71.2%   0.000669      +3.3%     +0.6%   -0.111%
+        0.90      86.1%   0.000302      +0.7%     -0.2%   -0.048%
+        0.95      91.6%   0.000157      -0.7%     -1.1%   -0.024%
+        0.99      96.9%   0.000032      -1.7%     -1.7%   -0.001%
+      mean |coverage error| 0.024   skill vs uncond +5.0%   skill vs rolling-vol +0.8%
+      top features: atr_pct(93), hour_cos(87), m_tt_acct_ls(79), m_book_imb_far(78), m_tt_pos_ls(78), realized_vol20(69), m_oi_chg24(69), cvd_slope24(66)
+
+      liquidation check over 4 bars (4 x 15m):
+        45x (liq 2.22%): breached 0.55% of bars | warned p05 0.08% p01 6.42% | caught 0% / 0% of breaches
+        50x (liq 2.00%): breached 0.70% of bars | warned p05 0.53% p01 13.11% | caught 0% / 9% of breaches
+        60x (liq 1.67%): breached 1.25% of bars | warned p05 2.87% p01 20.05% | caught 10% / 36% of breaches
+
+    up excursion (short risk)  (n=4874)
+           q   coverage    pinball  vs uncond    vs vol median fc
+        0.01       2.9%   0.000034      -1.7%     -1.7%   +0.001%
+        0.05       8.3%   0.000169      -1.0%     -1.5%   +0.025%
+        0.10      14.5%   0.000326      -0.2%     -1.3%   +0.051%
+        0.25      29.2%   0.000723      +2.2%     +0.7%   +0.118%
+        0.50      55.3%   0.001164      +4.6%     +2.2%   +0.235%
+        0.75      74.9%   0.001225      +6.4%     +3.5%   +0.414%
+        0.90      86.7%   0.000906      +6.3%     +5.1%   +0.625%
+        0.95      91.7%   0.000671      +2.7%     +3.5%   +0.766%
+        0.99      97.1%   0.000313      -2.3%    -15.0%   +1.084%
+      mean |coverage error| 0.031   skill vs uncond +1.9%   skill vs rolling-vol -0.5%
+
+==============================================================================
+SOLUSDT @ 15m   horizon 4 bars
+==============================================================================
+  cache: 9000 candles on disk
+  +859 newer bars
+  cache saved: 9859 candles total
+  micro: 53 days needed, 51 already cached
+  micro: 14976 5m buckets in 11.9s
+  micro features: 11 cols, coverage 99.4%
+  samples: 4874   embargo: 48 bars
+
+    forward return  (n=4874)
+           q   coverage    pinball  vs uncond    vs vol median fc
+        0.01       3.2%   0.000241      -9.5%    -23.3%   -0.829%
+        0.05       8.6%   0.000618      +1.3%     -5.6%   -0.552%
+        0.10      14.2%   0.000928      +1.7%     -2.6%   -0.398%
+        0.25      27.4%   0.001489      -0.5%     -2.1%   -0.194%
+        0.50      50.7%   0.001809      -1.6%     -1.6%   +0.014%
+        0.75      71.7%   0.001570      -1.0%     -0.8%   +0.214%
+        0.90      86.1%   0.001006      +2.1%     +1.0%   +0.430%
+        0.95      91.7%   0.000659      +6.6%     +3.9%   +0.578%
+        0.99      97.0%   0.000252      +3.7%     -4.9%   +0.868%
+      mean |coverage error| 0.028   skill vs uncond +0.3%   skill vs rolling-vol -4.0%
+
+    down excursion (long risk)  (n=4874)
+           q   coverage    pinball  vs uncond    vs vol median fc
+        0.01       3.8%   0.000334     -14.1%    -34.7%   -1.044%
+        0.05       9.6%   0.000677      +6.0%     -9.4%   -0.776%
+        0.10      14.9%   0.000913     +11.1%     -3.9%   -0.622%
+        0.25      27.5%   0.001251     +10.2%     -0.4%   -0.421%
+        0.50      48.6%   0.001233      +6.5%     -0.5%   -0.255%
+        0.75      71.2%   0.000793      +2.3%     -1.2%   -0.132%
+        0.90      86.4%   0.000361      -0.3%     -1.7%   -0.057%
+        0.95      92.0%   0.000187      -1.2%     -1.6%   -0.030%
+        0.99      97.5%   0.000038      -1.7%     -1.7%   -0.002%
+      mean |coverage error| 0.031   skill vs uncond +2.1%   skill vs rolling-vol -6.1%
+      top features: atr_pct(108), realized_vol20(100), m_oi_chg24(83), m_tt_pos_ls(82), vol_expansion(81), m_global_ls(75), cvd_slope24(68), hour_cos(67)
+
+      liquidation check over 4 bars (4 x 15m):
+        45x (liq 2.22%): breached 0.72% of bars | warned p05 0.45% p01 1.85% | caught 0% / 6% of breaches
+        50x (liq 2.00%): breached 1.11% of bars | warned p05 0.55% p01 3.22% | caught 0% / 9% of breaches
+        60x (liq 1.67%): breached 1.78% of bars | warned p05 1.03% p01 8.68% | caught 5% / 28% of breaches
+
+    up excursion (short risk)  (n=4874)
+           q   coverage    pinball  vs uncond    vs vol median fc
+        0.01       2.5%   0.000041      -1.7%     -1.7%   +0.003%
+        0.05       8.1%   0.000198      -1.9%     -2.2%   +0.033%
+        0.10      14.0%   0.000379      -0.5%     -1.1%   +0.063%
+        0.25      30.4%   0.000848      +0.3%     -0.8%   +0.139%
+        0.50      52.9%   0.001340      +3.9%     +0.9%   +0.264%
+        0.75      73.3%   0.001407      +5.7%     +0.6%   +0.447%
+        0.90      86.2%   0.001009      +8.7%     +2.7%   +0.647%
+        0.95      90.8%   0.000693     +12.3%     +5.8%   +0.792%
+        0.99      96.7%   0.000283     +10.7%     -1.1%   +1.116%
+      mean |coverage error| 0.032   skill vs uncond +4.2%   skill vs rolling-vol +0.4%
+
+==============================================================================
+SUMMARY - does the model beat a rolling-vol estimate?
+==============================================================================
+  symbol     target              cal.err    vs uncond  vs roll-vol
+  BTCUSDT    fwd_return            0.023         3.1%        -0.6%
+  BTCUSDT    down_excursion        0.032         5.2%        -1.0%
+  BTCUSDT    up_excursion          0.029         7.1%         2.8%
+  ETHUSDT    fwd_return            0.023         0.2%        -2.1%
+  ETHUSDT    down_excursion        0.024         5.0%         0.8%
+  ETHUSDT    up_excursion          0.031         1.9%        -0.5%
+  SOLUSDT    fwd_return            0.028         0.3%        -4.0%
+  SOLUSDT    down_excursion        0.031         2.1%        -6.1%
+  SOLUSDT    up_excursion          0.032         4.2%         0.4%
+
+  Some targets beat the rolling-vol baseline while staying calibrated.
+  That is a REAL result: conditional range is predictable where direction
+  is not. Use it for stop distance and sizing, never as a price target.

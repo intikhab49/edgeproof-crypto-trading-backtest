@@ -1,0 +1,128 @@
+{
+  "generated_utc": "20260906T073057Z",
+  "args": {
+    "symbols": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "SOLUSDT"
+    ],
+    "interval": "15m",
+    "candles": 5000,
+    "seq_len": 24,
+    "pt": 1.5,
+    "sl": 1.5,
+    "vert": 8,
+    "ambiguous": "drop",
+    "folds": 5,
+    "embargo": 0.01,
+    "hidden": 48,
+    "layers": 1,
+    "dropout": 0.3,
+    "epochs": 25,
+    "batch": 128,
+    "lr": 0.001,
+    "fee": 0.0004,
+    "seed": 7,
+    "micro": true,
+    "control": false,
+    "only": null
+  },
+  "reports": [
+    {
+      "symbol": "BTCUSDT",
+      "interval": "15m",
+      "seq_len": 24,
+      "micro": true,
+      "control": false,
+      "n_samples": 4799,
+      "results": {
+        "BiLSTM": {
+          "verdict": "no_edge",
+          "threshold": 0.7,
+          "trades": 616,
+          "profit_factor": 0.5397045807445253,
+          "total_return": -0.47634072134969974,
+          "sharpe": -0.2561331635313738,
+          "deflated_sharpe": 7.333578189161472e-13,
+          "random_pf": 0.5454923616588931,
+          "folds": 5
+        },
+        "LSTM": {
+          "verdict": "no_edge",
+          "threshold": 0.35,
+          "trades": 758,
+          "profit_factor": 0.539060414766421,
+          "total_return": -0.6084343561491582,
+          "sharpe": -0.2530338830577791,
+          "deflated_sharpe": 6.2727600891321345e-15,
+          "random_pf": 0.5436714090006017,
+          "folds": 5
+        }
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "interval": "15m",
+      "seq_len": 24,
+      "micro": true,
+      "control": false,
+      "n_samples": 4799,
+      "results": {
+        "BiLSTM": {
+          "verdict": "no_edge",
+          "threshold": 0.55,
+          "trades": 664,
+          "profit_factor": 0.6953193996722629,
+          "total_return": -0.43054102089237545,
+          "sharpe": -0.1480146800113346,
+          "deflated_sharpe": 1.1094736460548482e-05,
+          "random_pf": 0.6276452097075709,
+          "folds": 5
+        },
+        "LSTM": {
+          "verdict": "no_edge",
+          "threshold": 0.7,
+          "trades": 541,
+          "profit_factor": 0.7881253853681685,
+          "total_return": -0.21088451708034806,
+          "sharpe": -0.09654987625781623,
+          "deflated_sharpe": 0.0017792212153244225,
+          "random_pf": 0.6255043226396065,
+          "folds": 5
+        }
+      }
+    },
+    {
+      "symbol": "SOLUSDT",
+      "interval": "15m",
+      "seq_len": 24,
+      "micro": true,
+      "control": false,
+      "n_samples": 4790,
+      "results": {
+        "BiLSTM": {
+          "verdict": "no_edge",
+          "threshold": 0.7,
+          "trades": 623,
+          "profit_factor": 0.7868098681716136,
+          "total_return": -0.30995367587275746,
+          "sharpe": -0.10030438151637434,
+          "deflated_sharpe": 0.001237481873605284,
+          "random_pf": 0.6881166424224928,
+          "folds": 5
+        },
+        "LSTM": {
+          "verdict": "no_edge",
+          "threshold": 0.5,
+          "trades": 679,
+          "profit_factor": 0.730268028851061,
+          "total_return": -0.45750027650001834,
+          "sharpe": -0.13015345865459618,
+          "deflated_sharpe": 2.529783720284229e-06,
+          "random_pf": 0.6907736744793292,
+          "folds": 5
+        }
+      }
+    }
+  ]
+}

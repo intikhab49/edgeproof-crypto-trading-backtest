@@ -1,0 +1,275 @@
+{
+  "generated_utc": "20260905T230018Z",
+  "args": {
+    "symbols": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "SOLUSDT"
+    ],
+    "interval": "15m",
+    "candles": 5000,
+    "pt": 1.5,
+    "sl": 1.5,
+    "vert": 8,
+    "ambiguous": "drop",
+    "folds": 6,
+    "embargo": 0.01,
+    "trees": 300,
+    "fee": 0.0004,
+    "seed": 7
+  },
+  "reports": [
+    {
+      "symbol": "BTCUSDT",
+      "interval": "15m",
+      "verdict": "no_edge",
+      "n_samples": 4882,
+      "label_dist": {
+        "-1": 1700,
+        "0": 1467,
+        "1": 1715
+      },
+      "ambiguous_dropped": 15,
+      "mean_uniqueness": 0.17930122028138185,
+      "folds_used": 6,
+      "embargo_bars": 48,
+      "n_trials": 9,
+      "best_threshold": 0.7,
+      "trades": 99,
+      "profit_factor": 0.6478723322460718,
+      "win_rate": 0.48484848484848486,
+      "total_return": -0.06351254099529058,
+      "sharpe": -0.1834948337625515,
+      "deflated_sharpe": 0.022326186000226678,
+      "random_pf": 0.6291800840715895,
+      "random_total_p95": -0.010690721589884818,
+      "buy_hold": 0.047203767184672084,
+      "regime_hot": {
+        "n": 15,
+        "pf": 0.7465000390810155,
+        "win_rate": 0.4666666666666667,
+        "avg_pnl": -0.0005849878068092198,
+        "total": -0.008774817102138297,
+        "sharpe": -0.12663045680934656
+      },
+      "regime_cold": {
+        "n": 84,
+        "pf": 0.6244494244287729,
+        "win_rate": 0.4880952380952381,
+        "avg_pnl": -0.0006516395701565748,
+        "total": -0.05473772389315228,
+        "sharpe": -0.19799125843748686
+      },
+      "top_features": [
+        [
+          "vol_expansion",
+          649.1666666666666
+        ],
+        [
+          "realized_vol20",
+          518.8333333333334
+        ],
+        [
+          "cvd_slope24",
+          505.1666666666667
+        ],
+        [
+          "atr_pct",
+          462.6666666666667
+        ],
+        [
+          "lag_bb_width",
+          446.6666666666667
+        ],
+        [
+          "hour_sin",
+          429.5
+        ],
+        [
+          "ret48_z",
+          413.8333333333333
+        ],
+        [
+          "lag_macd_hist",
+          402.6666666666667
+        ],
+        [
+          "hour_cos",
+          385.6666666666667
+        ],
+        [
+          "cvd_slope6",
+          361.3333333333333
+        ]
+      ]
+    },
+    {
+      "symbol": "ETHUSDT",
+      "interval": "15m",
+      "verdict": "no_edge",
+      "n_samples": 4888,
+      "label_dist": {
+        "-1": 1614,
+        "0": 1579,
+        "1": 1695
+      },
+      "ambiguous_dropped": 9,
+      "mean_uniqueness": 0.17492730115664196,
+      "folds_used": 6,
+      "embargo_bars": 48,
+      "n_trials": 9,
+      "best_threshold": 0.65,
+      "trades": 166,
+      "profit_factor": 0.8670727267928906,
+      "win_rate": 0.5542168674698795,
+      "total_return": -0.04873178067554966,
+      "sharpe": -0.06289036278170113,
+      "deflated_sharpe": 0.05556500422975691,
+      "random_pf": 0.6792949126532777,
+      "random_total_p95": -0.025789772603958868,
+      "buy_hold": 0.20477373297489898,
+      "regime_hot": {
+        "n": 27,
+        "pf": 0.5577796713869666,
+        "win_rate": 0.4444444444444444,
+        "avg_pnl": -0.001595941876876965,
+        "total": -0.043090430675678054,
+        "sharpe": -0.2692496317503919
+      },
+      "regime_cold": {
+        "n": 139,
+        "pf": 0.9790411964551075,
+        "win_rate": 0.5755395683453237,
+        "avg_pnl": -4.0585251797637555e-05,
+        "total": -0.00564134999987162,
+        "sharpe": -0.009301959822761
+      },
+      "top_features": [
+        [
+          "cvd_slope24",
+          600.5
+        ],
+        [
+          "vol_expansion",
+          529.0
+        ],
+        [
+          "atr_pct",
+          502.8333333333333
+        ],
+        [
+          "realized_vol20",
+          450.8333333333333
+        ],
+        [
+          "ret48_z",
+          448.8333333333333
+        ],
+        [
+          "lag_bb_width",
+          423.6666666666667
+        ],
+        [
+          "hour_cos",
+          418.8333333333333
+        ],
+        [
+          "hour_sin",
+          394.5
+        ],
+        [
+          "lag_macd_hist",
+          341.0
+        ],
+        [
+          "dist_hh20",
+          340.6666666666667
+        ]
+      ]
+    },
+    {
+      "symbol": "SOLUSDT",
+      "interval": "15m",
+      "verdict": "no_edge",
+      "n_samples": 4894,
+      "label_dist": {
+        "-1": 1721,
+        "0": 1462,
+        "1": 1711
+      },
+      "ambiguous_dropped": 3,
+      "mean_uniqueness": 0.17368312257397775,
+      "folds_used": 6,
+      "embargo_bars": 48,
+      "n_trials": 9,
+      "best_threshold": 0.7,
+      "trades": 77,
+      "profit_factor": 0.9769308525870717,
+      "win_rate": 0.5454545454545454,
+      "total_return": -0.004467108192570692,
+      "sharpe": -0.010440686445713812,
+      "deflated_sharpe": 0.27818563305619826,
+      "random_pf": 0.7735642550940146,
+      "random_total_p95": 0.03223816618672514,
+      "buy_hold": 0.1935847840103159,
+      "regime_hot": {
+        "n": 21,
+        "pf": 0.7628997705638767,
+        "win_rate": 0.47619047619047616,
+        "avg_pnl": -0.0007695600877967905,
+        "total": -0.0161607618437326,
+        "sharpe": -0.1235459031336952
+      },
+      "regime_cold": {
+        "n": 56,
+        "pf": 1.09319145499046,
+        "win_rate": 0.5714285714285714,
+        "avg_pnl": 0.0002088152437707483,
+        "total": 0.011693653651161904,
+        "sharpe": 0.03925994853083216
+      },
+      "top_features": [
+        [
+          "vol_expansion",
+          597.0
+        ],
+        [
+          "cvd_slope24",
+          583.3333333333334
+        ],
+        [
+          "realized_vol20",
+          569.6666666666666
+        ],
+        [
+          "atr_pct",
+          475.0
+        ],
+        [
+          "ret48_z",
+          469.0
+        ],
+        [
+          "lag_bb_width",
+          420.5
+        ],
+        [
+          "hour_cos",
+          381.1666666666667
+        ],
+        [
+          "buy_ratio_ma6",
+          359.8333333333333
+        ],
+        [
+          "cvd_slope6",
+          349.5
+        ],
+        [
+          "hour_sin",
+          349.3333333333333
+        ]
+      ]
+    }
+  ]
+}

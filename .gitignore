@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.bak
+*.log
+.env
+# local market-data caches and live read artifacts (re-downloadable / personal)
+research/data/
+research/backtests/
+evidence-v2/
+signals/
+snapshots/

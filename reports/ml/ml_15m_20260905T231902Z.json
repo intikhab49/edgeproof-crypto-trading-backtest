@@ -1,0 +1,277 @@
+{
+  "generated_utc": "20260905T231902Z",
+  "args": {
+    "symbols": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "SOLUSDT"
+    ],
+    "interval": "15m",
+    "candles": 5000,
+    "pt": 1.5,
+    "sl": 1.5,
+    "vert": 8,
+    "ambiguous": "drop",
+    "folds": 6,
+    "embargo": 0.01,
+    "trees": 300,
+    "fee": 0.0004,
+    "seed": 7,
+    "micro": true,
+    "workers": 8
+  },
+  "reports": [
+    {
+      "symbol": "BTCUSDT",
+      "interval": "15m",
+      "verdict": "no_edge",
+      "n_samples": 4884,
+      "label_dist": {
+        "-1": 1705,
+        "0": 1418,
+        "1": 1761
+      },
+      "ambiguous_dropped": 10,
+      "mean_uniqueness": 0.1828423441865902,
+      "folds_used": 6,
+      "embargo_bars": 48,
+      "n_trials": 9,
+      "best_threshold": 0.65,
+      "trades": 179,
+      "profit_factor": 0.7643316791377768,
+      "win_rate": 0.49162011173184356,
+      "total_return": -0.05711061621333618,
+      "sharpe": -0.11291616236479143,
+      "deflated_sharpe": 0.00464810827467077,
+      "random_pf": 0.5289010261445465,
+      "random_total_p95": -0.06239848802654949,
+      "buy_hold": 0.06722188570907013,
+      "regime_hot": {
+        "n": 40,
+        "pf": 0.4946918115337805,
+        "win_rate": 0.4,
+        "avg_pnl": -0.001022430401217554,
+        "total": -0.040897216048702154,
+        "sharpe": -0.30542778932706655
+      },
+      "regime_cold": {
+        "n": 139,
+        "pf": 0.8995449325851326,
+        "win_rate": 0.5179856115107914,
+        "avg_pnl": -0.00011664316665204342,
+        "total": -0.016213400164634035,
+        "sharpe": -0.044256418324766324
+      },
+      "top_features": [
+        [
+          "vol_expansion",
+          467.3333333333333
+        ],
+        [
+          "m_tt_pos_ls",
+          448.3333333333333
+        ],
+        [
+          "m_global_ls",
+          406.5
+        ],
+        [
+          "m_tt_acct_ls",
+          400.8333333333333
+        ],
+        [
+          "realized_vol20",
+          342.8333333333333
+        ],
+        [
+          "hour_sin",
+          335.8333333333333
+        ],
+        [
+          "m_oi_chg24",
+          331.6666666666667
+        ],
+        [
+          "hour_cos",
+          330.0
+        ],
+        [
+          "lag_bb_width",
+          320.3333333333333
+        ],
+        [
+          "atr_pct",
+          316.0
+        ]
+      ]
+    },
+    {
+      "symbol": "ETHUSDT",
+      "interval": "15m",
+      "verdict": "no_edge",
+      "n_samples": 4889,
+      "label_dist": {
+        "-1": 1630,
+        "0": 1601,
+        "1": 1658
+      },
+      "ambiguous_dropped": 8,
+      "mean_uniqueness": 0.17498594039632476,
+      "folds_used": 6,
+      "embargo_bars": 48,
+      "n_trials": 9,
+      "best_threshold": 0.65,
+      "trades": 168,
+      "profit_factor": 0.8599874077130337,
+      "win_rate": 0.5178571428571429,
+      "total_return": -0.052664396868223114,
+      "sharpe": -0.0660372875554082,
+      "deflated_sharpe": 0.08453803643073354,
+      "random_pf": 0.6913287871514293,
+      "random_total_p95": -0.022460121281808715,
+      "buy_hold": 0.0803811178554505,
+      "regime_hot": {
+        "n": 30,
+        "pf": 1.3242544668909078,
+        "win_rate": 0.6333333333333333,
+        "avg_pnl": 0.0007841493094214494,
+        "total": 0.023524479282643482,
+        "sharpe": 0.12271178256354764
+      },
+      "regime_cold": {
+        "n": 138,
+        "pf": 0.7490410527512465,
+        "win_rate": 0.4927536231884058,
+        "avg_pnl": -0.0005520933054410624,
+        "total": -0.07618887615086661,
+        "sharpe": -0.12834710101448085
+      },
+      "top_features": [
+        [
+          "m_tt_acct_ls",
+          473.5
+        ],
+        [
+          "m_global_ls",
+          444.0
+        ],
+        [
+          "atr_pct",
+          388.3333333333333
+        ],
+        [
+          "m_tt_pos_ls",
+          388.3333333333333
+        ],
+        [
+          "cvd_slope24",
+          373.8333333333333
+        ],
+        [
+          "m_oi_chg24",
+          354.1666666666667
+        ],
+        [
+          "vol_expansion",
+          331.0
+        ],
+        [
+          "hour_cos",
+          329.5
+        ],
+        [
+          "realized_vol20",
+          322.6666666666667
+        ],
+        [
+          "m_book_imb_far",
+          307.5
+        ]
+      ]
+    },
+    {
+      "symbol": "SOLUSDT",
+      "interval": "15m",
+      "verdict": "no_edge",
+      "n_samples": 4894,
+      "label_dist": {
+        "-1": 1773,
+        "0": 1440,
+        "1": 1681
+      },
+      "ambiguous_dropped": 3,
+      "mean_uniqueness": 0.17455625080633594,
+      "folds_used": 6,
+      "embargo_bars": 48,
+      "n_trials": 9,
+      "best_threshold": 0.3,
+      "trades": 810,
+      "profit_factor": 0.8601792281423208,
+      "win_rate": 0.5037037037037037,
+      "total_return": -0.29625919183589156,
+      "sharpe": -0.06471989719965104,
+      "deflated_sharpe": 0.005318646409968875,
+      "random_pf": 0.7300028894401919,
+      "random_total_p95": -0.16596468997068592,
+      "buy_hold": 0.015441886116089956,
+      "regime_hot": {
+        "n": 151,
+        "pf": 0.9615153650915486,
+        "win_rate": 0.543046357615894,
+        "avg_pnl": -0.00011977234080347453,
+        "total": -0.018085623461324654,
+        "sharpe": -0.017048070599116227
+      },
+      "regime_cold": {
+        "n": 659,
+        "pf": 0.8312980665397305,
+        "win_rate": 0.4946889226100152,
+        "avg_pnl": -0.00042211467128158866,
+        "total": -0.2781735683745669,
+        "sharpe": -0.07977596892902651
+      },
+      "top_features": [
+        [
+          "m_tt_pos_ls",
+          501.1666666666667
+        ],
+        [
+          "vol_expansion",
+          404.1666666666667
+        ],
+        [
+          "m_tt_acct_ls",
+          403.3333333333333
+        ],
+        [
+          "m_global_ls",
+          389.5
+        ],
+        [
+          "cvd_slope24",
+          383.8333333333333
+        ],
+        [
+          "atr_pct",
+          382.8333333333333
+        ],
+        [
+          "m_oi_chg24",
+          358.5
+        ],
+        [
+          "ret48_z",
+          353.3333333333333
+        ],
+        [
+          "realized_vol20",
+          346.1666666666667
+        ],
+        [
+          "m_book_imb_far",
+          335.8333333333333
+        ]
+      ]
+    }
+  ]
+}
